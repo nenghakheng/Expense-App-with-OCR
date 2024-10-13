@@ -13,12 +13,12 @@ class GoalView extends StatelessWidget {
 
   PreferredSizeWidget buildAppbar() {
     return AppBar(
-      title: Text('Goal'),
+      title: const Text('Goal'),
       centerTitle: true,
     );
   }
 
   Widget buildBody() {
-    return Column();
+    return const Column();
   }
 }
