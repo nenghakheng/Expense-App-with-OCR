@@ -12,13 +12,16 @@ class ExpenseView extends StatelessWidget {
   }
 
   PreferredSizeWidget buildAppbar() {
-    return AppBar(
-      title: Text('Expense'),
-      centerTitle: true,
-    );
+    return AppBar();
   }
 
   Widget buildBody() {
-    return Column();
+    return Center(
+      child: const Column(
+        children: [
+          Text('Expense View'),
+        ],
+      ),
+    );
   }
 }

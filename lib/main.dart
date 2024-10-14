@@ -1,4 +1,4 @@
-import 'package:expense_app_with_ocr/views/home/home_view.dart';
+import 'package:expense_app_with_ocr/views/home/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,12 +12,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: ColorScheme.light(
+            surface: Colors.grey.shade100,
+            onSurface: Colors.black,
+            primary: const Color(0xFF00B4D8),
+            secondary: const Color(0xFF0077B6),
+            tertiary: const Color(0xFF03045E),
+            outline: Colors.grey),
       ),
-      home: const HomeView(),
+      home: const MainScreen(),
     );
   }
 }
