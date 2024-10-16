@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:expense_app_with_ocr/views/expense/expense_view.dart';
 import 'package:expense_app_with_ocr/views/home/screens/home_screen.dart';
+import 'package:expense_app_with_ocr/views/stat/screens/stat_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: buildFloatingActionButton(),
-      body: index == 0 ? const HomeScreen() : const ExpenseView(),
+      body: index == 0 ? const HomeScreen() : const StatScreen(),
     );
   }
 
