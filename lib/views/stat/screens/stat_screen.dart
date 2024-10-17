@@ -1,4 +1,4 @@
-import 'package:expense_app_with_ocr/views/stat/screens/local_widgets/chart.dart';
+import 'package:expense_app_with_ocr/views/stat/local_widgets/chart.dart';
 import 'package:flutter/material.dart';
 
 class StatScreen extends StatelessWidget {
