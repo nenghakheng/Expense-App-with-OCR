@@ -1,3 +1,4 @@
+import 'package:expense_app_with_ocr/views/auth/login/screens/login_screen.dart';
 import 'package:expense_app_with_ocr/views/home/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    bool isLogged = false;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
             tertiary: const Color(0xFF03045E),
             outline: Colors.grey),
       ),
-      home: const MainScreen(),
+      home: isLogged ? const MainScreen() : const LoginScreen(),
     );
   }
 }

@@ -35,7 +35,7 @@ class TransactionList extends StatelessWidget {
                                 shape: BoxShape.circle),
                           ),
                           Image.asset(
-                            'assets/food.png',
+                            'assets/images/food.png',
                             scale: 2,
                             color: Colors.white,
                           )
