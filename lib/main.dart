@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             tertiary: const Color(0xFF03045E),
             outline: Colors.grey),
       ),
-      home: isLogged ? const MainScreen() : const LoginScreen(),
+      home: isLogged ? const LoginScreen() : const MainScreen(),
     );
   }
 }
